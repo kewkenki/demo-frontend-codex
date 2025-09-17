@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSpace | Online Course Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header__inner">
+        <a href="#hero" class="brand">LearnSpace</a>
+        <nav class="nav" aria-label="Main navigation">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="site-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+          </button>
+          <ul class="nav__menu" id="site-menu">
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#newsletter" class="button button--ghost">Join Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Curated learning paths</p>
+            <h1>Grow your skills with classes led by industry experts</h1>
+            <p>
+              Discover on-demand courses, live workshops, and immersive programs
+              in tech, design, business, and more. LearnSpace brings together the
+              best instructors so you can learn at your pace.
+            </p>
+            <div class="hero__cta">
+              <a href="#courses" class="button">Browse courses</a>
+              <a href="#pricing" class="button button--ghost">View pricing</a>
+            </div>
+            <div class="hero__meta">
+              <span>200+ courses</span>
+              <span>18k learners</span>
+              <span>4.8/5 average rating</span>
+            </div>
+          </div>
+          <div class="hero__media">
+            <div class="hero__card">
+              <h2>Kickstart your learning journey</h2>
+              <p>
+                Save your favorite lessons, track progress across devices, and
+                earn certificates as you advance through each module.
+              </p>
+              <ul>
+                <li>Personalized recommendations</li>
+                <li>Live mentor Q&amp;A sessions</li>
+                <li>Hands-on projects &amp; templates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section catalog" id="courses">
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <p class="eyebrow">Course catalog</p>
+              <h2>Hand-picked courses for every skill level</h2>
+            </div>
+            <div class="catalog__controls">
+              <label class="sr-only" for="search-input">Search courses</label>
+              <input
+                type="search"
+                id="search-input"
+                class="catalog__search"
+                placeholder="Search by title, topic, or instructor..."
+              />
+            </div>
+          </div>
+          <div class="catalog__filters" role="group" aria-label="Filter courses">
+            <!-- Filter buttons inserted via JavaScript -->
+          </div>
+          <div class="catalog__grid" id="course-grid" aria-live="polite">
+            <!-- Courses rendered via JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <p class="eyebrow">Pricing</p>
+          <h2>Choose a plan that scales with your ambition</h2>
+          <div class="pricing__grid">
+            <article class="pricing-card">
+              <p class="pricing-card__tag">Starter</p>
+              <h3>Free</h3>
+              <p>Perfect for exploring essential lessons and featured courses.</p>
+              <ul>
+                <li>Access to 10 introductory courses</li>
+                <li>Community forum support</li>
+                <li>Weekly curated newsletter</li>
+              </ul>
+              <a href="#" class="button button--ghost">Get started</a>
+            </article>
+            <article class="pricing-card pricing-card--featured">
+              <p class="pricing-card__tag">Pro</p>
+              <h3>$29<span>/month</span></h3>
+              <p>Accelerate your learning with unlimited courses and projects.</p>
+              <ul>
+                <li>Unlimited course access</li>
+                <li>Downloadable templates &amp; assets</li>
+                <li>Live workshops &amp; mentor feedback</li>
+              </ul>
+              <a href="#" class="button">Start free trial</a>
+            </article>
+            <article class="pricing-card">
+              <p class="pricing-card__tag">Teams</p>
+              <h3>$89<span>/month</span></h3>
+              <p>Upskill your entire team with collaboration features built in.</p>
+              <ul>
+                <li>Team analytics &amp; progress insights</li>
+                <li>Dedicated success manager</li>
+                <li>Custom learning paths</li>
+              </ul>
+              <a href="#" class="button button--ghost">Talk to sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonials">
+        <div class="container">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Trusted by learners and teams worldwide</h2>
+          <div class="testimonials__grid">
+            <figure class="testimonial-card">
+              <blockquote>
+                “The hands-on labs and mentor sessions helped me land my dream
+                role as a product designer in under three months.”
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-card__name">Nia Roberts</span>
+                <span class="testimonial-card__meta">Product Designer, Berlin</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>
+                “Our engineering team uses LearnSpace to stay ahead of the latest
+                frameworks. The curated tracks make onboarding new hires a breeze.”
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-card__name">Ramon Saenz</span>
+                <span class="testimonial-card__meta">VP Engineering, Flux Labs</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>
+                “I love how I can bookmark lessons and get personalized
+                suggestions. The platform keeps me motivated to keep going.”
+              </blockquote>
+              <figcaption>
+                <span class="testimonial-card__name">Priya Narang</span>
+                <span class="testimonial-card__meta">Marketing Strategist, Toronto</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter" id="newsletter">
+        <div class="container newsletter__inner">
+          <div>
+            <p class="eyebrow">Stay in the loop</p>
+            <h2>Get weekly learning tips and featured tracks</h2>
+            <p>
+              Subscribe to our newsletter to unlock bonus resources and be the
+              first to know about upcoming cohorts and community events.
+            </p>
+          </div>
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <button type="submit" class="button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>&copy; <span id="year"></span> LearnSpace. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
